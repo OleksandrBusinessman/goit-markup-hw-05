@@ -287,6 +287,8 @@ img {
   margin-left: calc(-1 * var(--card-set-gap));
 }
 .foto .item {
+  position: relative;
+
   margin-top: var(--card-set-gap);
   margin-left: var(--card-set-gap);
   flex-basis: calc(100% / 3 - var(--card-set-gap));
@@ -297,6 +299,20 @@ img {
 .we-do .title {
   margin-bottom: 50px;
   text-align: center;
+}
+.foto .card-sign {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0;
+
+  width: 100%;
+  padding: 27px 0;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+
+  color: var(--white-color);
+  background: rgba(47, 48, 58, 0.8);
 }
 
 /* Секція Наша команда */
