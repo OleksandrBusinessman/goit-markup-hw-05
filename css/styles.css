@@ -17,6 +17,8 @@ font-family: 'Roboto', sans-serif; */
 
 :root {
   --card-set-gap: 30px;
+  --anim-dur: 250ms;
+  --main-cubic: cubic-bezier(0.4, 0, 0.2, 1);
   --main-text-color: #757575;
   --turquoise-color: #2196f3;
   --nav-title-color: #212121;
