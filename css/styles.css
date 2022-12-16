@@ -214,7 +214,7 @@ img {
 }
 
 /* Кнопка */
-.button {
+.hero .button {
   width: 200px;
   height: 50px;
   font-family: inherit;
@@ -229,8 +229,8 @@ img {
   color: var(--white-color);
   background-color: var(--turquoise-color);
 }
-.button:hover,
-.button:focus {
+.hero .button:hover,
+.hero .button:focus {
   background-color: var(--button-active-color);
 }
 
