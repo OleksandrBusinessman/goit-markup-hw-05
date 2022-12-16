@@ -46,13 +46,15 @@
     </div>
   </header>
   <main>
+
     <!--Блок герой!-->
     <section class="hero">
       <div class="hero-container">
         <h1 class="title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="button">Замовити послугу</button>
+        <button type="button" class="button" data-modal-open>Замовити послугу</button>
       </div>
     </section>
+
     <!--Секція наші сильні якості-->
     <section class="section our-strengths">
       <!--(h2 сховаємо від користувача за допомогою CSS)-->
@@ -98,6 +100,7 @@
         </ul>
       </div>
     </section>
+
     <!--Секція чим ми займаємося-->
     <section class="section we-do">
       <div class="container">
@@ -121,6 +124,7 @@
         </ul>
       </div>
     </section>
+
     <!--Секція Наша команда-->
     <section class="section our-team">
       <div class="container">
@@ -247,6 +251,7 @@
         </ul>
       </div>
     </section>
+
     <!-- Секція постійні клієнти -->
     <section class="section regular-customers">
       <div class="container">
@@ -286,6 +291,7 @@
       </div>
     </section>
   </main>
+
   <!--Підвал, логотип посилання на головну, адреса, список контактів-->
   <footer class="footer">
     <div class="container">
@@ -332,11 +338,16 @@
       </div>
     </div>
   </footer>
-  <div class="backdrop is-hidden">
+
+  <!-- backdrop + modal window -->
+  <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-      <button class="button">close-vector</button>
+      <button class="button" data-modal-close>close-vector</button>
     </div>
   </div>
+
+  <!-- Скрипт modal.js -->
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
