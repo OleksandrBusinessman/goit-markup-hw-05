@@ -618,3 +618,8 @@ img {
 
   background-color: var(--white-color);
 }
+
+/* кнопка модалки */
+.backdrop .button {
+  cursor: pointer;
+}
