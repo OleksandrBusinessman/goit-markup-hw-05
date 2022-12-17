@@ -546,6 +546,7 @@ img {
 }
 .examples .thumb {
   position: relative;
+
   overflow: hidden;
 }
 .examples .overlay {
