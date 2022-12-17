@@ -17,7 +17,7 @@ font-family: 'Roboto', sans-serif; */
 
 :root {
   --card-set-gap: 30px;
-  --anim-dur: 250ms;
+  --anim-dur: 1000ms;
   --main-cubic: cubic-bezier(0.4, 0, 0.2, 1);
   --main-text-color: #757575;
   --turquoise-color: #2196f3;
@@ -525,7 +525,6 @@ img {
   padding: 63px 24px;
   transform: translateY(100%);
   transition: transform var(--anim-dur) var(--main-cubic);
-  opacity: 0;
 
   width: 100%;
   height: 100%;
@@ -535,7 +534,6 @@ img {
 .examples .link:hover .overlay,
 .examples .link:focus .overlay {
   transform: translateY(0);
-  opacity: 1;
 }
 .overlay .title {
   margin-bottom: 0;
@@ -642,6 +640,7 @@ img {
   position: fixed;
   top: 0;
   left: 0;
+  transition: opacity var(--anim-dur) var(--main-cubic);
 
   width: 100%;
   height: 100%;
