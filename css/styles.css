@@ -621,5 +621,8 @@ img {
 
 /* кнопка модалки */
 .backdrop .button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
   cursor: pointer;
 }
