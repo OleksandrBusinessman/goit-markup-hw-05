@@ -624,5 +624,22 @@ img {
   position: absolute;
   top: 8px;
   right: 8px;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 30px;
+  height: 30px;
   cursor: pointer;
+  border-radius: 50%;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--white-color);
+}
+
+.backdrop .button:hover,
+.backdrop .button:focus {
+  fill: var(--turquoise-color);
 }
