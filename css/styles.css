@@ -17,7 +17,7 @@ font-family: 'Roboto', sans-serif; */
 
 :root {
   --card-set-gap: 30px;
-  --anim-dur: 1000ms;
+  --anim-dur: 250ms;
   --main-cubic: cubic-bezier(0.4, 0, 0.2, 1);
   --main-text-color: #757575;
   --turquoise-color: #2196f3;
@@ -511,16 +511,17 @@ img {
   padding: 63px 24px;
   transform: translateY(100%);
   transition: transform var(--anim-dur) var(--main-cubic);
+  opacity: 0;
 
   width: 100%;
   height: 100%;
 
-  outline: 3px solid teal;
   background-color: tomato;
 }
 .examples .link:hover .overlay,
 .examples .link:focus .overlay {
   transform: translateY(0);
+  opacity: 1;
 }
 
 /* footer */
