@@ -126,7 +126,9 @@ img {
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
+
   color: var(--nav-title-color);
+  transition: color var(--anim-dur) var(--main-cubic);
 }
 .nav .link:hover,
 .nav .link:focus {
@@ -147,10 +149,12 @@ img {
   height: 4px;
   border-radius: 2px;
 
+  opacity: 1;
+  transform: scaleX(1);
   background-color: var(--turquoise-color);
 }
-.site-nav .link:hover::after,
-.site-nav .link:focus::after {
+.site-nav .link::after,
+.site-nav .link::after {
   content: '';
 
   position: absolute;
@@ -162,7 +166,15 @@ img {
   height: 4px;
   border-radius: 2px;
 
+  opacity: 0;
+  transform: scaleX(0);
+  transition: opacity var(--anim-dur) var(--main-cubic), transform var(--anim-dur) var(--main-cubic);
   background-color: var(--turquoise-color);
+}
+.site-nav .link:hover::after,
+.site-nav .link:focus::after {
+  opacity: 1;
+  transform: scaleX(1);
 }
 .main-nav .contacts {
   display: flex;
