@@ -523,6 +523,7 @@ img {
   left: 0;
   bottom: 0;
   padding: 63px 24px;
+
   transform: translateY(100%);
   transition: transform var(--anim-dur) var(--main-cubic);
 
@@ -640,6 +641,8 @@ img {
   position: fixed;
   top: 0;
   left: 0;
+
+  opacity: 1;
   transition: opacity var(--anim-dur) var(--main-cubic);
 
   width: 100%;
@@ -657,6 +660,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
+
   transform: translate(-50%, -50%);
 
   min-width: 528px;
