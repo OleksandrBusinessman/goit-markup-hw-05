@@ -692,9 +692,6 @@ img {
   opacity: 0;
   pointer-events: none;
 }
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.7);
-}
 
 /* modal window */
 .modal {
@@ -710,6 +707,9 @@ img {
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--anim-dur) var(--main-cubic);
   background-color: var(--white-color);
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.7);
 }
 
 /* кнопка модалки */
